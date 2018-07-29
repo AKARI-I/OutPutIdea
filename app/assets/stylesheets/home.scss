@@ -136,6 +136,13 @@
   
   .top-message {
     position: relative;
+    color: white;
+    text-shadow: 4px 3px 0px rgb(63, 63, 63),
+                 9px 8px 0px rgba(0,0,0,0.15);
+    span {
+      display: block;
+      transform: rotate(-7.5deg);
+    }
   }
   
   .top-main h2 {
