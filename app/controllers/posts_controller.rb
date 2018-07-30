@@ -1,11 +1,5 @@
 class PostsController < ApplicationController
   def index
-    @posts = [
-      "hoge",
-      "fuga",
-      "akari",
-      "sho",
-      "hentai"
-    ]
+    @posts = Post.all   # postsテーブルの全てのデータを配列で取得する
   end
 end
