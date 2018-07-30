@@ -10,13 +10,16 @@
   </head>
 
   <body>
-    <header>  <!-- 各ページ共通のヘッダー -->
+    <header>
       <div class="header-logo">
-        <a href="/">OutPutIdea</a>
+        <%= link_to("OutPutIdea", "/") %>
       </div>
       <ul class="header-menus">
         <li>
-          <a href="/detail">OutPutIdeaとは</a>
+          <%= link_to("OutPutIdeaとは", "/detail") %>
+        </li>
+        <li>
+          <%= link_to("投稿一覧", "/posts/index") %>
         </li>
       </ul>
     </header>
