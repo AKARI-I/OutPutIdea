@@ -10,6 +10,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>  <!-- 各ページ共通のヘッダー -->
+      <div class="header-logo">
+        <a href="/">OutPutIdea</a>
+      </div>
+      <ul class="header-menus">
+        <li>
+          <a href="/detail">OutPutIdeaとは</a>
+        </li>
+      </ul>
+    </header>
+    <%= yield %>  <!-- この部分に各Viewファイルが代入され、このファイルの一部として表示されている -->
   </body>
 </html>
