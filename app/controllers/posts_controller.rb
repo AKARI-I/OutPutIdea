@@ -9,4 +9,8 @@ class PostsController < ApplicationController
     # 変数paramsにハッシュとして値が入っており、[:id]でその値の取得ができる
     @post = Post.find_by(id: params[:id])
   end
+
+  # 新規投稿ページ
+  def new
+  end
 end
