@@ -7,6 +7,6 @@ class HomeController < ApplicationController
   def top
   end
 
-  def detail
+  def mypage
   end
 end

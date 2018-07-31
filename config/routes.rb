@@ -5,6 +5,6 @@ URLに対し、「どのControllerのどのアクション」で処理をする�
 
 Rails.application.routes.draw do
   get '/' => "home#top"         # トップページ
-  get 'detail' => "home#detail" # 詳細ページ
+  get 'mypage' => "home#mypage" # 詳細ページ
   get 'posts/index'             # 投稿一覧ページ
 end
