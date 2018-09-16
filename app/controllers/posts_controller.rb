@@ -13,4 +13,9 @@ class PostsController < ApplicationController
   # 新規投稿ページ
   def new
   end
+
+  # 新規投稿保存
+  def create
+    redirect_to("/posts/index")   # 投稿ボタンを押した時、投稿一覧画面にリダイレクトする
+  end
 end

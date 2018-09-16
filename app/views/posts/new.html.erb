@@ -1,11 +1,18 @@
 <div class="main posts-new">
   <div class="container">
     <h1 class="form-heading">投稿する</h1>
+
+    <!-- 投稿処理 -->
+    <%= form_tag("/posts/create") do %>
+
     <!-- 入力フォーム -->
     <div class="form">
       <div class="form-body">
-        <textarea></textarea>
-        <input type="submit" value="投稿">
+        <!-- 送信先を指定 -->
+        <%= form_tag("/posts/create") %>
+          <textarea></textarea>
+          <input type="submit" value="投稿">
+        <% end %>
       </div>
     </div>
   </div>
