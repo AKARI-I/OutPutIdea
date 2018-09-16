@@ -1,7 +1,8 @@
 class PostsController < ApplicationController
   # 投稿一覧
   def index
-    @posts = Post.all   # postsテーブルの全てのデータを配列で取得する
+    # postsテーブルの全てのデータを配列で取得して降順で表示する
+    @posts = Post.all.order(created_at: :desc)
   end
 
   # 投稿詳細
