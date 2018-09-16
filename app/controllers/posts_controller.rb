@@ -16,6 +16,10 @@ class PostsController < ApplicationController
 
   # 新規投稿保存
   def create
+    # フォームから送信されたデータをparams変数から受け取り、保存する
+    @post = Post.new(content:params[:content])  # (カラム名:params[:フォームのname属性])
+    @post.save
+
     redirect_to("/posts/index")   # 投稿ボタンを押した時、投稿一覧画面にリダイレクトする
   end
 end
